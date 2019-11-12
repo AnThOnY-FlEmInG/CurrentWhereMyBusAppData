@@ -14,6 +14,9 @@
 		0496E74D236B6D53007F06B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0496E74B236B6D53007F06B2 /* LaunchScreen.storyboard */; };
 		0496E758236B6D53007F06B2 /* Where_sMyBus_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0496E757236B6D53007F06B2 /* Where_sMyBus_2Tests.swift */; };
 		0496E763236B6D53007F06B2 /* Where_sMyBus_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0496E762236B6D53007F06B2 /* Where_sMyBus_2UITests.swift */; };
+		340C9243237A8371006F29F4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340C9242237A8371006F29F4 /* MapKit.framework */; };
+		340C9246237A83AF006F29F4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340C9245237A83AF006F29F4 /* AudioToolbox.framework */; };
+		340C9248237A83B4006F29F4 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340C9247237A83B4006F29F4 /* ExternalAccessory.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,10 @@
 		0496E75E236B6D53007F06B2 /* Where'sMyBus?2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Where'sMyBus?2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0496E762236B6D53007F06B2 /* Where_sMyBus_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Where_sMyBus_2UITests.swift; sourceTree = "<group>"; };
 		0496E764236B6D53007F06B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		340C9242237A8371006F29F4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		340C9244237A8382006F29F4 /* Where'sMyBus?2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Where'sMyBus?2.entitlements"; sourceTree = "<group>"; };
+		340C9245237A83AF006F29F4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		340C9247237A83B4006F29F4 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +61,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				340C9248237A83B4006F29F4 /* ExternalAccessory.framework in Frameworks */,
+				340C9243237A8371006F29F4 /* MapKit.framework in Frameworks */,
+				340C9246237A83AF006F29F4 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +91,7 @@
 				0496E756236B6D53007F06B2 /* Where'sMyBus?2Tests */,
 				0496E761236B6D53007F06B2 /* Where'sMyBus?2UITests */,
 				0496E740236B6D53007F06B2 /* Products */,
+				340C9241237A8371006F29F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +108,7 @@
 		0496E741236B6D53007F06B2 /* Where'sMyBus?2 */ = {
 			isa = PBXGroup;
 			children = (
+				340C9244237A8382006F29F4 /* Where'sMyBus?2.entitlements */,
 				0496E742236B6D53007F06B2 /* AppDelegate.swift */,
 				0496E744236B6D53007F06B2 /* ViewController.swift */,
 				0496E746236B6D53007F06B2 /* Main.storyboard */,
@@ -123,6 +135,16 @@
 				0496E764236B6D53007F06B2 /* Info.plist */,
 			);
 			path = "Where'sMyBus?2UITests";
+			sourceTree = "<group>";
+		};
+		340C9241237A8371006F29F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				340C9247237A83B4006F29F4 /* ExternalAccessory.framework */,
+				340C9245237A83AF006F29F4 /* AudioToolbox.framework */,
+				340C9242237A8371006F29F4 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +215,23 @@
 				TargetAttributes = {
 					0496E73E236B6D53007F06B2 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+							com.apple.WAC = {
+								enabled = 1;
+							};
+						};
 					};
 					0496E752236B6D53007F06B2 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -430,7 +469,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Where'sMyBus?2/Where'sMyBus?2.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Where'sMyBus?2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -439,7 +480,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Where-sMyBus-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -447,7 +488,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Where'sMyBus?2/Where'sMyBus?2.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Where'sMyBus?2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -456,7 +499,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Where-sMyBus-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -466,6 +509,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Where'sMyBus?2Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -486,6 +530,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Where'sMyBus?2Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -505,6 +550,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Where'sMyBus?2UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -524,6 +570,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Where'sMyBus?2UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

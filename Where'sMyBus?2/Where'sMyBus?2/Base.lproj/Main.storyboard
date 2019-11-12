@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zYT-eF-caj">
-    <device id="ipad9_7" orientation="landscape">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zYT-eF-caj">
+    <device id="ipad10_5" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,62 +15,56 @@
             <objects>
                 <viewController title="IntroScreen" id="zYT-eF-caj" customClass="ViewController" customModule="Where_sMyBus_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YTi-wv-GM6">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bus.001" translatesAutoresizingMaskIntoConstraints="NO" id="gwU-cc-5cj">
-                                <rect key="frame" x="264" y="209" width="497" height="313"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Updated Intro" translatesAutoresizingMaskIntoConstraints="NO" id="cge-5J-Xoz">
+                                <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Where’s My Bus?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yb-gE-NcA">
-                                <rect key="frame" x="289" y="100" width="447" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Connecting Learners and Drivers " textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="IMo-fA-Y02">
-                                <rect key="frame" x="254" y="560" width="516" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mdl-N5-3rZ">
-                                <rect key="frame" x="390" y="629" width="245" height="119"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Get Started ">
-                                    <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHm-px-tG7">
+                                <rect key="frame" x="308" y="646" width="497" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="getStartedPressed:" destination="zYT-eF-caj" eventType="touchUpInside" id="4HV-yw-YCh"/>
+                                    <action selector="getStartedPressed:" destination="zYT-eF-caj" eventType="touchUpInside" id="UUp-Ti-6ob"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.9192116857" green="0.4748905665" blue="0.083025912549999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cge-5J-Xoz" firstAttribute="centerX" secondItem="YTi-wv-GM6" secondAttribute="centerX" id="BPu-J5-cah"/>
+                            <constraint firstItem="cge-5J-Xoz" firstAttribute="bottom" secondItem="2Qq-Yx-JfV" secondAttribute="bottom" id="RlN-RG-8HT"/>
+                            <constraint firstAttribute="trailing" secondItem="cge-5J-Xoz" secondAttribute="trailing" id="Xo3-wS-6gd"/>
+                            <constraint firstItem="cge-5J-Xoz" firstAttribute="centerY" secondItem="YTi-wv-GM6" secondAttribute="centerY" id="Yb4-iC-Jzt"/>
+                            <constraint firstItem="cge-5J-Xoz" firstAttribute="leading" secondItem="YTi-wv-GM6" secondAttribute="leading" id="ckL-GJ-rDe"/>
+                            <constraint firstItem="cge-5J-Xoz" firstAttribute="top" secondItem="YTi-wv-GM6" secondAttribute="top" id="r5g-Sr-7FW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2Qq-Yx-JfV"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="QZj-BC-oo8"/>
                     <connections>
-                        <outlet property="getStarted" destination="Mdl-N5-3rZ" id="Pvk-if-Lrs"/>
-                        <segue destination="v5M-I0-SgK" kind="show" customClass="IntroScreen" id="cac-76-ebD"/>
+                        <outlet property="getStarted" destination="pHm-px-tG7" id="cna-9W-WUU"/>
+                        <segue destination="v5M-I0-SgK" kind="push" id="Pn0-dH-dWy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GzF-sS-dhQ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-437" y="-32"/>
+            <point key="canvasLocation" x="-438.12949640287769" y="-32.374100719424462"/>
         </scene>
         <!--Home-->
         <scene sceneID="vwL-Zn-MWE">
             <objects>
                 <viewController id="MhN-RP-aq5" customClass="FirstViewController" customModule="Where_sMyBus_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M5g-Lo-7Zm">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="Home" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="jdy-6R-gTp">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Home" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="jdy-6R-gTp">
                                 <rect key="frame" x="462" y="396" width="94" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -78,10 +72,6 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="centerY" secondItem="jdy-6R-gTp" secondAttribute="centerY" id="0KA-YB-eSE"/>
-                            <constraint firstAttribute="centerX" secondItem="jdy-6R-gTp" secondAttribute="centerX" id="OWh-41-nIB"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="5dC-eZ-eLL"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="IMp-Dt-KOy"/>
@@ -95,7 +85,7 @@
             <objects>
                 <viewController id="Hca-q3-uOb" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4jQ-5d-VNi">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="My Route" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="dTk-hh-xwi">
@@ -121,7 +111,7 @@
             <objects>
                 <viewController id="i2n-I3-pP0" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bv8-l7-Ukr">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="GPS" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="8a8-QL-Zl5">
@@ -132,6 +122,10 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="QhI-QW-42P">
+                                <rect key="frame" x="118" y="127" width="898" height="592"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="OnY-b5-5ii"/>
@@ -140,12 +134,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4pu-mw-KjI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1559" y="-311"/>
+            <point key="canvasLocation" x="1558.8129496402878" y="-311.51079136690652"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Jzb-aI-c02">
             <objects>
                 <tabBarController id="v5M-I0-SgK" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="IYJ-7L-kt9"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i7w-Fw-bKY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -163,6 +158,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bus.001" width="1024" height="768"/>
+        <image name="Updated Intro" width="1024" height="768"/>
     </resources>
 </document>

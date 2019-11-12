@@ -9,9 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -22,6 +23,7 @@ class ViewController: UIViewController {
     @IBOutlet var getStarted: UIButton!
     
     @IBAction func getStartedPressed(_ sender: AnyObject) {
+        
             //switch view controller
     }
 }
